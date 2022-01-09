@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible"content="IE=edge"/>
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title> About Us </title>
+        <link rel ="stylesheet" href="pbe3.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="locations.html">Store Locations</a>
+                </li>
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="product.html">Product</a>
+                </li>
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="delivery.html">Delivery Options</a>
+                </li>
+                </a>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </nav>
+
+        <div style="padding:20px;background-color:red  ;">
+                <h1 class="sub"> 27 Starbucks holiday drinks from around the world </h1> 
+                <p class="isi">Starbucks Stories & News</p>
+
+                <div class="slideshow-container"> 
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 5</div>
+                  <img src="img/slideimg.jpg" style="width:100%">
+                  <div class="text"> Starbucks twist on the popular red velvet confection, this drink celebrates the festive season with a colorful flair. A creamy red velvet syrup is mixed with espresso and freshly steamed milk and capped with whipped cream and a generous serving of red velvet topping. Available hot, iced or as a Frappuccino®blended beverage </div>
+                </div>
+                  
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img/slide2img.jpg" style="width:100%">
+                    <div class="text">Celebrate the festive season where the weather is warm with a Merry Strawberry Frappuccino. It’s made with white chocolate mocha and blended with a creamy mixture of milk, espresso and ice poured over layers of mocha sauce, whipped cream and strawberry drizzle. Also available hot and iced.</div>
+                </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                        <img src="img/slide3img.jpg" style="width:100%">
+                        <div class="text">This new holiday beverage is a cutie, made with smooth blonde espresso and dolce cookie sauce, and topped with a chocolate cookie, perfect for the holidays.</div>
+                    </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="img/slide4img.jpg" style="width:100%">
+                            <div class="text">Starbucks classic beverage is back for its 13th holiday season, made with signature espresso, steamed milk and rich caramel brulée sauce finished with whipped cream and a supreme topping of even more caramel brulée bits.</div>
+                        </div>
+                            
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="img/slide5img.jpg" style="width:100%">
+                                <div class="text">The Haenam region in South Korea is known for its sweet potatoes, and this new beverage pays tribute to its heritage with a decadent black tea-based beverage made with Haenam roasted sweet potatoes topped with sour cream and caramel. Available hot and iced.</div>
+                            </div>
+                              <br>
+                              <div style="text-align:center">
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                                <span class="dot"></span> 
+                            </div>
+                        </div>
+                        <script>
+                        var slideIndex = 0;
+                        showSlides();
+                        function showSlides() {
+                            var i;
+                            var slides = document.getElementsByClassName("mySlides");
+                            var dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";  
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) {slideIndex = 1}    
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";  
+                            dots[slideIndex-1].className += " active";
+                            setTimeout(showSlides, 2000);
+                        }
+                        </script>
+
+    </body>
+</html>
